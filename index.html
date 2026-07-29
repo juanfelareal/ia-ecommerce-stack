@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IA en Ecommerce: El Stack de 2025 | LA REAL</title>
+<title>IA en Ecommerce: El Stack de 2026 | LA REAL</title>
 
 <!-- Open Graph -->
-<meta property="og:title" content="IA en Ecommerce: El Stack de 2025 | LA REAL">
+<meta property="og:title" content="IA en Ecommerce: El Stack de 2026 | LA REAL">
 <meta property="og:description" content="Optimiza tu sitio, escala tu contenido y domina tus datos con inteligencia artificial">
 <meta property="og:image" content="https://juanfelareal.github.io/ia-ecommerce-stack/logo-la-real.png">
 <meta property="og:url" content="https://juanfelareal.github.io/ia-ecommerce-stack/">
@@ -76,6 +76,24 @@ body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);-we
 .pilar-item::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:6px}
 .pilar-tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;padding-top:16px;border-top:1px solid var(--border)}
 .pilar-tool{font-size:12px;font-weight:600;padding:5px 12px;border-radius:50px;background:#f3f4f6;color:var(--card-ink)}
+
+/* ---------- EXAMPLE BOX ---------- */
+.pilar-example{margin-top:24px;padding:24px;background:var(--green-soft);border-radius:14px;border:1px solid rgba(22,163,74,.15)}
+.pilar-example-header{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.pilar-example-tag{font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--green-text);background:rgba(22,163,74,.15);padding:4px 10px;border-radius:50px}
+.pilar-example-client{font-size:12px;font-weight:600;color:var(--green-text)}
+.pilar-example-content{display:flex;gap:20px;align-items:flex-start}
+.pilar-example-img{flex:0 0 260px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.1);border:1px solid rgba(0,0,0,.06)}
+.pilar-example-text{flex:1}
+.pilar-example-title{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.pilar-example-desc{font-size:14px;color:var(--card-ink);line-height:1.55}
+.pilar-example-desc b{color:var(--green-text);font-weight:700}
+.pilar-example-link{display:inline-block;margin-top:12px;font-size:12px;font-weight:600;color:var(--green);text-decoration:none}
+.pilar-example-link:hover{text-decoration:underline}
+@media(max-width:768px){
+  .pilar-example-content{flex-direction:column}
+  .pilar-example-img{flex:none;width:100%;max-width:300px}
+}
 
 /* ---------- METRICS ROW ---------- */
 .metrics{display:flex;gap:40px;justify-content:center;padding:40px 0;flex-wrap:wrap}
@@ -159,7 +177,7 @@ body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);-we
 <section class="hero">
   <div class="wrap">
     <div class="eyebrow">Charla exclusiva</div>
-    <h1>IA en Ecommerce:<br><span class="hl">El Stack de 2025</span></h1>
+    <h1>IA en Ecommerce:<br><span class="hl">El Stack de 2026</span></h1>
     <p class="lead">Optimiza tu sitio, escala tu contenido y domina tus datos con inteligencia artificial</p>
     <div class="pills">
       <div class="pill">
@@ -232,6 +250,25 @@ body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);-we
         <span class="pilar-tool">Claude</span>
         <span class="pilar-tool">MCP</span>
         <span class="pilar-tool">Shopify API</span>
+      </div>
+
+      <!-- EJEMPLO REAL -->
+      <div class="pilar-example">
+        <div class="pilar-example-header">
+          <span class="pilar-example-tag">Caso real</span>
+          <span class="pilar-example-client">Cacao Hunters</span>
+        </div>
+        <div class="pilar-example-content">
+          <img src="ejemplo-bundles.jpg" alt="Bundles con descuento por volumen" class="pilar-example-img">
+          <div class="pilar-example-text">
+            <div class="pilar-example-title">Bundles con descuento por volumen</div>
+            <div class="pilar-example-desc">
+              Antes: pagar <b>$9 USD/mes</b> por una app de bundles.<br><br>
+              Ahora: le pedimos a Claude que creara la l&oacute;gica de descuentos por volumen directamente en el theme. <b>$0/mes</b>, funcionalidad nativa, sin apps externas.
+            </div>
+            <a href="https://cacaohunters.com/products/6739" target="_blank" class="pilar-example-link">Ver producto en vivo →</a>
+          </div>
+        </div>
       </div>
     </div>
 
