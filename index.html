@@ -95,6 +95,35 @@ body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);-we
   .pilar-example-img{flex:none;width:100%;max-width:300px}
 }
 
+/* ---------- STATEMENT SECTION ---------- */
+.statement{background:var(--dark);padding:50px 0;text-align:center}
+.statement h2{font-size:42px;font-weight:900;color:#fff;letter-spacing:-2px;margin-bottom:8px}
+.statement h2 .hl{color:var(--green-bright)}
+.statement .sub{font-size:18px;color:#94a3b8;font-weight:400}
+
+/* ---------- IMAGE CAROUSEL ---------- */
+.carousel-container{margin-top:24px;overflow:hidden;position:relative}
+.carousel-track{display:flex;gap:12px;animation:scroll-carousel 20s linear infinite}
+.carousel-track:hover{animation-play-state:paused}
+.carousel-img{flex:0 0 180px;height:220px;background:#e5e7eb;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;padding:12px;border:2px dashed #d1d5db}
+@keyframes scroll-carousel{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+@media(max-width:768px){
+  .carousel-img{flex:0 0 140px;height:180px}
+  .statement h2{font-size:28px}
+}
+
+/* ---------- DASHBOARD PREVIEW ---------- */
+.dashboard-preview{margin-top:24px;background:var(--green-soft);border-radius:14px;padding:20px;border:1px solid rgba(22,163,74,.15)}
+.dashboard-preview-header{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.dashboard-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.dashboard-placeholder{background:#fff;border-radius:10px;height:160px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;padding:16px;border:2px dashed #d1d5db}
+@media(max-width:768px){
+  .dashboard-grid{grid-template-columns:1fr}
+}
+
 /* ---------- METRICS ROW ---------- */
 .metrics{display:flex;gap:40px;justify-content:center;padding:40px 0;flex-wrap:wrap}
 .metric{text-align:center}
@@ -193,6 +222,14 @@ body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);-we
         Datos conectados
       </div>
     </div>
+  </div>
+</section>
+
+<!-- STATEMENT -->
+<section class="statement">
+  <div class="wrap">
+    <h2>La mentalidad correcta: <span class="hl">Todo es posible</span></h2>
+    <p class="sub">Con las herramientas adecuadas, los l&iacute;mites los pones t&uacute;</p>
   </div>
 </section>
 
@@ -311,6 +348,24 @@ body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);-we
         <span class="pilar-tool">Lifestyle Shots</span>
         <span class="pilar-tool">Variaciones de producto</span>
       </div>
+
+      <!-- CARRUSEL DE IMÁGENES IA -->
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Primera tanda (se duplica para loop infinito) -->
+          <div class="carousel-img">Imagen IA 1<br><small>Placeholder</small></div>
+          <div class="carousel-img">Imagen IA 2<br><small>Placeholder</small></div>
+          <div class="carousel-img">Imagen IA 3<br><small>Placeholder</small></div>
+          <div class="carousel-img">Imagen IA 4<br><small>Placeholder</small></div>
+          <div class="carousel-img">Imagen IA 5<br><small>Placeholder</small></div>
+          <!-- Duplicado para loop continuo -->
+          <div class="carousel-img">Imagen IA 1<br><small>Placeholder</small></div>
+          <div class="carousel-img">Imagen IA 2<br><small>Placeholder</small></div>
+          <div class="carousel-img">Imagen IA 3<br><small>Placeholder</small></div>
+          <div class="carousel-img">Imagen IA 4<br><small>Placeholder</small></div>
+          <div class="carousel-img">Imagen IA 5<br><small>Placeholder</small></div>
+        </div>
+      </div>
     </div>
 
     <!-- PILAR 3 -->
@@ -332,6 +387,18 @@ body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--ink);-we
         <span class="pilar-tool">Meta Ads API</span>
         <span class="pilar-tool">Shopify API</span>
         <span class="pilar-tool">Dashboards</span>
+      </div>
+
+      <!-- DASHBOARD PREVIEW -->
+      <div class="dashboard-preview">
+        <div class="dashboard-preview-header">
+          <span class="pilar-example-tag">Caso real</span>
+          <span class="pilar-example-client">Dashboard de cliente</span>
+        </div>
+        <div class="dashboard-grid">
+          <div class="dashboard-placeholder">Screenshot dashboard 1<br><small>Placeholder</small></div>
+          <div class="dashboard-placeholder">Screenshot dashboard 2<br><small>Placeholder</small></div>
+        </div>
       </div>
     </div>
   </div>
